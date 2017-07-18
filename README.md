@@ -1,2 +1,2 @@
 # logger
-Logger Monitoring Starter Project
+Log Monitoring Starter Project
