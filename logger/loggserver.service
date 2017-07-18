@@ -1,0 +1,17 @@
+[Unit]
+Description=Loggs Monitoring
+After=network.target
+
+[Service]
+#User=nfce
+Group=sudo
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=loggserver
+ExecStart=/usr/bin/python2.7 /usr/local/bin/loggserver 
+StandardOutput=null
+
+[Install]
+WantedBy=multi-user.target
+Alias=loggserver.service
+
